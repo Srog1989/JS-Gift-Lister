@@ -7,10 +7,10 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Sarah = User.create(name: "Sarah")
-Jordan = User.create(name: "Jordan")
+sarah = User.create(name: "Sarah")
+jordan = User.create(name: "Jordan")
 
-gift = Sarah.gifts.build(name: "Coat", cost: 75)
+gift = sarah.gifts.build(name: "Coat", cost: 75)
 gift.save
-present = Jordan.gifts.build(name: "Fishing Pole", cost: 90)
+present = jordan.gifts.build(name: "Fishing Pole", cost: 90)
 present.save
