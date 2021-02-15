@@ -11,4 +11,9 @@ class Post {
         this.cost = gift.cost
         Gift.allGifts.push(this)
     }
+
+    static generateGifts() {
+        const giftsData = apiService.fetchGifts()
+
+    }
 }
