@@ -2,10 +2,10 @@
 // "class(static)" methods and "instance(method on the prototype)" methods for the gift class
 
 
-class Post {
+class Gift {
     static allGifts = []
 
-    constuctor(gift){
+    constructor(gift){
         this.id = gift.id
         this.name = gift.name
         this.cost = gift.cost
@@ -14,6 +14,11 @@ class Post {
 
     static generateGifts() {
         const giftsData = apiService.fetchGifts()
-
+            .then(data => 
+                data.forEach(gift => {
+                    const newGift = new Gift(gift)
+                })
+            )
+        // console.log(giftsData)
     }
 }
