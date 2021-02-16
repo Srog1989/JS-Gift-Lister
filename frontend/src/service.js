@@ -13,4 +13,8 @@ class ApiService {
         })
         .then(res => res.json())
     }
+
+    // fetchUsers(){
+    //     return fetch(`${this.}`)
+    // }
 }
